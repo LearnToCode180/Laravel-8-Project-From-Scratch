@@ -26,9 +26,24 @@ A Laravel 8 project that has all essential and basics tools which can help you t
 
 ### Creating controllers:
 > php artisan make:controller MyController
+> php artisan make:controller AdminController --resource
 
 ### Creating models:
 > php artisan make:model MyModel
+> php artisan make:model User --migration
+> php artisan make:model User -m
+> php artisan make:model User --controller
+> php artisan make:model User -c
+> php artisan make:model User --seed
+> php artisan make:model User -s
+> php artisan make:model User -mcs
+> php artisan make:model User --all
+
+### Creating seeders:
+> php artisan make:seeder AdminUserSeeder
+
+### Run seeder:
+> php artisan db:seed --class=AdminUserSeeder
 
 ### Creating migrations:
 > php artisan make:migration MyMigration
