@@ -1,6 +1,9 @@
 # Laravel-Project-From-Scratch
 A Laravel 8 project that has all essential and basics tools which can help you to make your future projects easily. 
 
+# Project Description
+In this project, we will build a university platform which has two diffrent users: the Admin user and the Students user, and which of those has his own interfaces. The Admin can add, update, delete students, while students can check out their informations as well as download them as a PDF file and add their own images.
+
 # Full Laravel 8 documentation
 [Laravel 8](https://laravel.com/docs/8.x/)
 
