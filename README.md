@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-# Laravel-Project-From-Scratch
+# Laravel-8-Project-From-Scratch
 A Laravel 8 project that has all essential and basics tools which can help you to make your future projects easily. 
 
 # Project Description
