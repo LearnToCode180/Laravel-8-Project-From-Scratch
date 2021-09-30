@@ -70,7 +70,7 @@ admin
       <table class="table table-striped table-bordered">
         <thead>
             <tr style="background-color: #435d7d">
-              <th colspan="8" class="text-light" style="font-size: 25px">Liste des Etudiants</th>
+              <th colspan="9" class="text-light" style="font-size: 25px">Liste des Etudiants</th>
             </tr>
             <tr>
                 <th>Nom</th>
@@ -79,7 +79,7 @@ admin
                 <th>Téléphone</th>
                 <th>Filière</th>
                 <th>Email</th>
-                <th colspan="2">Actions</th>
+                <th colspan="3">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -100,7 +100,12 @@ admin
                     <a href="javascript:void(0)" onclick="deleteStudent({{ $etudiant->id }})">
                         <img src="/images/delete.png" alt="delete" width="25">
                     </a>
-                </td>  
+                </td>
+                <td class="text-center">
+                  <a href="{{ Route('admin.deleteView', ['id' => $etudiant->id]) }}">
+                      <img src="/images/delete.png" alt="delete" width="25">
+                  </a>
+              </td>
             </tr>
           @endforeach
         </tbody>

@@ -84,6 +84,13 @@ Route::resource('admin', AdminController::class)->except([
 
 Route::put('admin', 'AdminController@update')->name('admin.update');
 
+
+Route::get('/admin/delete/{id}', function ($id){
+    return view('admin.delete',['id' => $id]);
+})->name('admin.deleteView');
+
+Route::delete('/admin/delete2/{id}', 'AdminController@delete2')->name('admin.delete2');
+
 Route::fallback(function(){
     return view('page404');
 });

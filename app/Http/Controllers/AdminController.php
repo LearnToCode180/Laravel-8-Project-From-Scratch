@@ -115,7 +115,14 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::destroy($id);
+        User::destroy($id);
         return redirect()->back()->with('success', 'L\'étudiant a été bien supprimé !!');
     }
+
+    public function delete2($id){
+        $etudiants = User::where('isAdmin', '!=', true)->paginate(3);
+        User::destroy($id);
+        return redirect('/admin');
+    }
+
 }
